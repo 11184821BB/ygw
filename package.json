@@ -1,0 +1,23 @@
+{
+  "name": "yougouitem",
+  "version": "1.0.0",
+  "description": "10.10日第一次使用gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w17612939306/House-Yougou.git"
+  },
+  "bugs": {
+    "url": "https://github.com/w17612939306/House-Yougou/issues"
+  },
+  "homepage": "https://github.com/w17612939306/House-Yougou#readme"
+}

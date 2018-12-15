@@ -1,0 +1,46 @@
+.intr-box {
+  width: 1210px;
+  margin: 0 auto; }
+  .intr-box ul {
+    width: 100%;
+    overflow: hidden; }
+    .intr-box ul li {
+     /* float: left;影响动态生成布局，暂时先不用*/
+      margin: 10px 12px 10px 0;
+      width: 232px;
+      display: inline-block;
+      position: relative;
+      overflow: hidden; }
+      .intr-box ul li .box-img {
+        width: 228px;
+        border: 1px solid #ddd;
+        padding: 1px;
+        overflow: hidden; }
+        .intr-box ul li .box-img img {
+          width: 228px;
+          height: 238px; }
+        .intr-box ul li .box-img p {
+          background: #666;
+          color: white;
+          text-indent: 6px;
+          height: 24px;
+          line-height: 24px; }
+      .intr-box ul li .box-name {
+        padding: 10px 0 6px 6px;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; }
+        .intr-box ul li .box-name a {
+          float: left; }
+        .intr-box ul li .box-name p {
+          display: inline-block;
+          float: left; }
+          .intr-box ul li .box-name p span {
+            margin-left: 15px; }
+          .intr-box ul li .box-name p .old-price {
+            font-size: 10px;
+            text-decoration: line-through; }
+    .intr-box ul li:nth-child(5n) {
+      margin-right: 0; }
+
+/*# sourceMappingURL=introduce.css.map */

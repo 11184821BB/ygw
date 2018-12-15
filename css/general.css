@@ -1,0 +1,24 @@
+@charset "utf-8";
+	body{
+		font: 12px/1.5 tahoma,'Microsoft YaHei';
+	}
+	*{
+		margin:0;
+		padding:0;
+		/*font-family: "宋体";    1em =16px*/
+		text-decoration:none;
+		list-style: none;
+	}
+	select, textarea, img, fieldset, input {
+	    vertical-align: middle;
+	    outline: none;
+	}
+	dl, ul, dt, dd, input {
+		font: 12px/1.5 tahoma,'Microsoft YaHei';
+	}
+	a{
+		color:#000000;
+	}
+	a:hover {
+    	text-decoration: none;
+	}

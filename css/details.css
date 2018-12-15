@@ -1,0 +1,204 @@
+.detailsBox {
+  width: 100%; }
+  .detailsBox .goods-datails {
+    width: 1210px;
+    margin: 10px auto 20px;
+    height: 550px; }
+    .detailsBox .goods-datails .goods-datails-progress {
+      width: 100%;
+      height: 30px;
+      line-height: 30px; }
+    .detailsBox .goods-datails .goods-Imgs {
+      position: relative;
+      width: 600px;
+      height: 500px;
+      float: left; }
+      .detailsBox .goods-datails .goods-Imgs #sourceImg {
+        width: 480px;
+        height: 480px;
+        float: right;
+        position: absolute;
+        left: 100px;
+        top: 0; }
+        .detailsBox .goods-datails .goods-Imgs #sourceImg #mirrorBox {
+          width: 200px;
+          height: 200px;
+          background: #ddd;
+          opacity: 0.5;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none; }
+      .detailsBox .goods-datails .goods-Imgs #showBox {
+        display: none;
+        position: absolute;
+        left: 620px;
+        top: 0;
+        width: 500px;
+        height: 500px;
+       /* background: url(../img/img/101013571_01_m.jpg) no-repeat;*/
+        background-size: 1200px 1200px;
+        z-index: 100; }
+      .detailsBox .goods-datails .goods-Imgs .smallImgBox {
+        float: left;
+        margin: 8px 25px; }
+        .detailsBox .goods-datails .goods-Imgs .smallImgBox ul li {
+          margin: 5px 0;
+          padding: 1px;
+          border: 1px solid #ddd;
+          z-index: 10; }
+          .detailsBox .goods-datails .goods-Imgs .smallImgBox ul li .jiantou {
+            width: 0;
+            height: 0;
+            border: 10px solid black;
+            border-color: transparent transparent transparent black;
+            position: absolute;
+            left: 88px;
+            top: 34px;
+            z-index: 0; }
+    .detailsBox .goods-datails .goods-shoping {
+      width: 580px;
+      height: 500px;
+      position: relative;
+      float: right;
+      margin-left: 20px; }
+      .detailsBox .goods-datails .goods-shoping .goods-logo {
+        width: 120px;
+        height: 75px; }
+        .detailsBox .goods-datails .goods-shoping .goods-logo img {
+          margin: 15px auto; }
+      .detailsBox .goods-datails .goods-shoping h4 {
+        margin: 10px auto; }
+      .detailsBox .goods-datails .goods-shoping .Discount {
+        margin: 40px auto 20px; }
+        .detailsBox .goods-datails .goods-shoping .Discount strong {
+          font-size: 30px;
+          font-weight: bolder; }
+        .detailsBox .goods-datails .goods-shoping .Discount span {
+          text-decoration: line-through; }
+        .detailsBox .goods-datails .goods-shoping .Discount p {
+          margin: 5px 0; }
+      .detailsBox .goods-datails .goods-shoping .goods-color {
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+        padding-top: 20px;
+        border-top: 1px dashed #333333; }
+        .detailsBox .goods-datails .goods-shoping .goods-color p {
+          width: 60px;
+          float: left; }
+        .detailsBox .goods-datails .goods-shoping .goods-color a {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          float: left;
+          padding: 1px;
+          margin-right: 5px;
+          border: 1px solid black; }
+          .detailsBox .goods-datails .goods-shoping .goods-color a img {
+            width: 40px;
+            height: 40px; }
+            .detailsBox .goods-datails .goods-shoping .goods-color a img i {
+              width: 14px;
+              height: 14px;
+              background: url(../img/css_sprites.png) -177px -46px;
+              display: inline;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              z-index: 20; }
+        .detailsBox .goods-datails .goods-shoping .goods-color a:nth-child(2) {
+          left: 115px; }
+      .detailsBox .goods-datails .goods-shoping .goods-size {
+        overflow: hidden;
+        margin-top: 30px; }
+        .detailsBox .goods-datails .goods-shoping .goods-size span {
+          float: left; }
+        .detailsBox .goods-datails .goods-shoping .goods-size p {
+          margin-left: 50px; }
+        .detailsBox .goods-datails .goods-shoping .goods-size .looksize {
+          clear: both; }
+      .detailsBox .goods-datails .goods-shoping .goods-number {
+        overflow: hidden;
+        margin-top: 25px;
+        vertical-align: middle; }
+        .detailsBox .goods-datails .goods-shoping .goods-number p {
+          float: left; }
+        .detailsBox .goods-datails .goods-shoping .goods-number #shop-number {
+          float: left;
+          height: 30px; }
+      .detailsBox .goods-datails .goods-shoping .checkOut {
+        margin-top: 30px; }
+        .detailsBox .goods-datails .goods-shoping .checkOut ul {
+          overflow: hidden; }
+        .detailsBox .goods-datails .goods-shoping .checkOut ul li {
+          margin-right: 20px;
+          float: left; }
+          .detailsBox .goods-datails .goods-shoping .checkOut ul li a {
+            display: inline-block;
+            width: 100px;
+            font-size: 20px;
+            padding: 5px 30px;
+            background: black;
+            color: white; }
+        .detailsBox .goods-datails .goods-shoping .checkOut ul li:last-child a {
+          background: #ddd;
+          color: black; }
+      .detailsBox .goods-datails .goods-shoping .collection {
+        margin: 10px 0; }
+        .detailsBox .goods-datails .goods-shoping .collection a {
+          display: inline-block;
+          margin-right: 20px; }
+          .detailsBox .goods-datails .goods-shoping .collection a i {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url(../img/css_sprites.png) -110px -174px;
+            vertical-align: middle; }
+          .detailsBox .goods-datails .goods-shoping .collection a .fenxiang {
+            background: url(../img/css_sprites.png) -10px -174px; }
+      .detailsBox .goods-datails .goods-shoping .QR-code {
+        text-align: center;
+        position: absolute;
+        right: 100px;
+        bottom: 0; }
+        .detailsBox .goods-datails .goods-shoping .QR-code p {
+          margin-bottom: 8px; }
+
+.goodsinformation {
+  width: 100%;
+  margin: 0 auto;
+  background: yellow; }
+  .goodsinformation .goods-inform, .goodsinformation .size-inform, .goodsinformation .xiangqing {
+    width: 1190px;
+    margin: 0 auto; }
+    .goodsinformation .goods-inform p, .goodsinformation .size-inform p, .goodsinformation .xiangqing p {
+      font-size: 32px;
+      text-align: center; }
+  .goodsinformation .goods-inform table tr, .goodsinformation .size-inform table tr {
+    border-bottom: 1px solid #eee; }
+  .goodsinformation .goods-inform table tr td, .goodsinformation .size-inform table tr td {
+    line-height: 80px;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .goodsinformation .goods-inform table tr td {
+    width: 238px;
+    height: 80px; }
+  .goodsinformation .size-inform table tr td {
+    width: 98px;
+    height: 80px; }
+  .goodsinformation .xiangqing {
+    width: 790px;
+    margin: 0 auto; }
+  .goodsinformation .pinpai {
+    width: 990px;
+    margin: 0 auto; }
+  .goodsinformation .evaluate p, .goodsinformation .youlove p {
+    font-size: 32px;
+    text-align: center; }
+
+/*# sourceMappingURL=details.css.map */

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手机号登录页面</title>
+		<link rel="stylesheet" href="css/registe.css" />
+		<link rel="stylesheet" href="css/general.css" />
+	</head>
+	<body>
+		<!--header部分start-->
+			<div id="regist-header">	</div>
+		<!--header部分end-->
+		
+		
+		<!--注册部分start-->
+		<div class="login-header">
+			<a href="#">
+				<img src="img/signin-register-logo.png" alt=""/>
+			</a>			
+			<p>用户登录</p>	
+		</div>
+
+		<!--手机号登录部分-->
+		<div class="login-body podd">
+			<div class="login-bgimg">
+				<div class="login-box box2">
+					<ul class="login-title ">
+						<li><a href="http://127.0.0.1:8020/House-Yougou/account-login.html?__hbt=1539417739522">登录</a></li>
+						<li><a href="http://127.0.0.1:8020/House-Yougou/registe.html?__hbt=1539416324298" style="background-color: #333;color:white;">注册</a></li>
+					</ul>
+					<div id="phoneform">
+						<div class="user Pass ">
+							<p class="icon-top">手机号</p>
+							<input type="text" name="username" id="usernameId"  placeholder="请输入您的手机号"/>
+							<span id="userNameSpan"></span><br/>
+						</div>
+						<div class="moNub">
+							<ul>	
+								<li class="word Pass mobilems">
+									<p class="icon-bot">验证码</p>
+									<input type="text"/>
+									<span id="code-Span"></span><br/>
+								</li>
+								<li class="Ptwo">
+									<p><img src="img/verifyhandler.ashx.jpg" alt="图片验证码" /></p>	
+								</li>	
+							</ul>
+						</div>
+						
+						<div class="moNub messnumb">
+							<ul>	
+								<li class="word Pass mobilems">
+									<p class="icon-bot">验证码</p>
+									<input type="text"/>
+									<span id="phoncode-Span"></span><br/>
+								</li>
+								<li class="Ptwo">
+									<span>获取验证码</span>	
+								</li>	
+							</ul>
+						</div>
+						<div class="user Pass ">
+							<p class="icon-top">密码</p>
+							<input type="text" name="userpass" id="userpassId" placeholder="字母、数字、符号均可，6-25个字符以内"/>
+							<span id="userPassSpan"></span><br/>
+						</div>
+						
+						<div class="user Pass ">
+							<p class="icon-top">确认密码</p>
+							<input type="text" />
+							<span id="message"></span><br/>
+						</div>
+						
+						<p class="checkbox"><input type="checkbox" id=""/>我已阅读并同意《优购会员注册协议》</p>
+						 
+						<input type="button" id="submit" value="确认并注册">	
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!--手机号登录部分-->
+		
+			
+		<!--footer部分start-->
+			<div id="regist-footer">	</div>
+		<!--footer部分end-->
+		
+	</body>
+</html>
+<script type="text/javascript" src="js/regist-login.js" ></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/regist-headerfoot.js" ></script>

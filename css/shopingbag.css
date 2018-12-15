@@ -1,0 +1,151 @@
+.shopingbag {
+  width: 100%; }
+  .shopingbag .shopcar {
+    width: 1190px;
+    margin: auto; }
+    .shopingbag .shopcar .sp-thead {
+      overflow: hidden;
+      position: relative;
+      clear: both; }
+  
+	.shopingbag .shopcar .sp-thead h3 {
+    width: 360px;
+    height: 50px;
+    float: left;
+    background: url(../img/logoa.jpg) no-repeat 0 0; }
+  .shopingbag .shopcar .sp-thead .sp-progress {
+    float: right;
+    width: 750px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    background: #e8e8e8; }
+    .shopingbag .shopcar .sp-thead .sp-progress ul {
+      overflow: hidden; }
+  .shopingbag .shopcar .sp-thead .sp-progress ul li {
+    width: 200px;
+    font-size: 15px;
+    float: left;
+    list-style: none;
+    color: #666;
+    text-align: center;
+    position: relative; }
+    .shopingbag .shopcar .sp-thead .sp-progress ul li i, .shopingbag .shopcar .sp-thead .sp-progress ul li em {
+      position: absolute;
+      width: 0;
+      height: 0;
+      line-height: 0;
+      border: 10px solid transparent;
+      border-color: transparent transparent transparent #e8e8e8;
+      right: -20px;
+      top: 0; }
+    .shopingbag .shopcar .sp-thead .sp-progress ul li em {
+      right: -22px;
+      border-left-color: white; }
+      .shopingbag .shopcar .sp-thead .sp-progress ul li:first-child {
+        color: white;
+        background: #333; }
+        .shopingbag .shopcar .sp-thead .sp-progress ul li:first-child i {
+          border-left-color: #333; }
+    .shopingbag .shopcar .tablebox {
+      border: 1px solid #eee;
+      border-bottom: 0; }
+    .tablebox .ckbox,.tablebox .Allbox{
+    	width:16px;
+    	height:16px;
+    	margin-left: 15px;
+    }  
+    .shopingbag .shopcar .sp-table ul {
+      overflow: hidden;
+      border: 1px solid #eee;
+      border-bottom: none;
+      margin-top: 20px; }
+      .shopingbag .shopcar .sp-table ul li {
+        float: left;
+        width: 155px;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 0; }
+    .shopingbag .shopcar .sp-table ul li:nth-child(1) {
+      width: 100px; }
+    .shopingbag .shopcar .sp-table ul li:nth-child(2) {
+      width: 300px; }
+    .shopingbag .shopcar .sp-goods {
+      overflow: hidden;
+      padding-top: 30px;
+      border: 1px solid #eee; }
+      .shopingbag .shopcar .sp-goods a {
+        color: black;
+        line-height: 20px; }
+      .shopingbag .shopcar .sp-goods .goods {
+        float: left;
+        width: 140px;
+        margin: 10px 10px 0 0; }
+        .shopingbag .shopcar .sp-goods .goods .goodsimg {
+          border: 1px solid #eee;
+          display: inline-block;
+          padding: 5px; }
+      .shopingbag .shopcar .sp-goods .imgBox {
+        margin-top: -15px; }
+      .shopingbag .shopcar .sp-goods .goodsdetails {
+        width: 240px;
+        margin: 0 20px; }
+      .shopingbag .shopcar .sp-goods .color-size {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        margin-top: 0; }
+      .shopingbag .shopcar .sp-goods .price {
+        width: 100px;
+        text-align: center;
+        margin: 0 40px; }
+      .shopingbag .shopcar .sp-goods .goodsmony {
+        width: 100px; }
+      .shopingbag .shopcar .sp-goods .addmove {
+        text-align: center;
+        margin-top: 0; }
+        .shopingbag .shopcar .sp-goods .addmove a {
+          display: block; }
+    .shopingbag .shopcar .sp-select ul {
+      overflow: hidden; }
+    .shopingbag .shopcar .sp-select ul li {
+      float: left;
+      width: 80px;
+      text-align: center;
+      margin: 10px 40px 0 0; }
+    .shopingbag .shopcar .sp-continue {
+      overflow: hidden;
+      background: #eee;
+      height: 54px;
+      line-height: 54px; }
+      .shopingbag .shopcar .sp-continue p {
+        float: left; }
+        .shopingbag .shopcar .sp-continue p a {
+          display: inline-block;
+          width: 80px;
+          height: 22px;
+          line-height: 22px;
+          margin-left: 20px;
+          font-size: 12px;
+          background: #333;
+          color: white;
+          text-align: center; }
+      .shopingbag .shopcar .sp-continue .moneybox {
+        float: right; }
+        .shopingbag .shopcar .sp-continue .moneybox .Summoney {
+          overflow: hidden;
+          float: right; }
+          .shopingbag .shopcar .sp-continue .moneybox .Summoney p .totalmoney {
+            font-size: 16px; }
+            .shopingbag .shopcar .sp-continue .moneybox .Summoney p .totalmoney span {
+              font-size: 20px; }
+        .shopingbag .shopcar .sp-continue .moneybox .Maccount {
+          display: block;
+          float: right;
+          background: #333;
+          color: white;
+          font-size: 18px;
+          padding: 0 40px;
+          margin-left: 40px; }
+
+/*# sourceMappingURL=shopingbag.css.map */

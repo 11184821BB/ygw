@@ -1,0 +1,61 @@
+.intr-box{
+    width:1210px;
+    margin:0 auto;
+    ul{
+        width:100%;
+        overflow: hidden;
+        li{ 
+            float: left;
+            margin:10px 12px 10px 0;
+            width: 232px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+          
+            .box-img{
+                width:228px;
+                
+                border: 1px solid #ddd;
+                padding:1px;
+                overflow: hidden;
+                img{
+//                  margin-left: -5px;
+                    width:228px;
+                    height:238px;
+                }
+                p{  background:#666;
+                    color:white;
+                    
+                    text-indent: 6px;
+                   
+                    height:24px;
+                    line-height: 24px; 
+                }
+            }
+            .box-name{
+               padding: 10px 0 6px 6px;
+               width:100%;
+               overflow: hidden;
+               white-space: nowrap;
+                a{
+                    float: left;
+                }
+                p{
+                    display: inline-block;
+                    float: left;
+                    span{ 
+                        margin-left: 15px;
+                    }
+                    .old-price{
+                         font-size: 10px;
+                        text-decoration: line-through;
+                    }
+                }
+                
+            }
+        }
+        li:nth-child(5n){
+               margin-right:0;
+            }
+    }
+}

@@ -1,0 +1,7 @@
+#mbx {
+ display:inline-block;
+ background:url(/template/common/images/filter-sprite.png?478b8e0e907e61a3b7d064721f98c584) no-repeat;
+ background-position:right 0;
+ padding-right:16px;
+ margin-right:10px;
+}

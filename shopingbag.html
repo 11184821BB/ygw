@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页面</title>
+		<link rel="stylesheet" href="css/shopingbag.css" />
+		<link rel="stylesheet" href="css/general.css" />
+	</head>
+	<body>
+		<!--spbag header start-->
+		<div id="spheader"></div>
+		<!--spbag header end-->
+		
+		<div class="shopingbag">
+			<div class="shopcar">
+				<table>
+					<div class="sp-thead">
+						<h3>
+							<a href=""><img src="img/logo-yg.png" alt="优生活，购时尚" /></a>
+						</h3>
+						<div class="sp-progress">
+							<ul>
+								<li>
+									我的购物袋
+									<em></em>
+									<i></i>
+									
+								</li>
+								<li>
+									提交订单中心
+									<em></em>
+									<i></i>
+								</li>
+								<li>
+									成功提交订单
+									<em></em>
+									<i></i>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tablebox">
+						<div class="sp-table">
+							<ul>
+								<li><a href="">
+									<input type="checkbox" class="Allbox"/>全选</a></li>
+								<li>商品名称</li>
+								<li>颜色尺码</li>
+								<li>单价</li>
+								<li>数量</li>
+								<li>小计（元）</li>
+								<li>操作</li>
+							</ul>
+						</div>
+						<ul id="shopingGoods">
+							<li class="sp-goods">
+								<p class="goods imgBox">
+									<input type="checkbox" class="ckbox"/>
+									<a href="" class="goodsimg"><img src="img/101_t.jpg" alt="" /></a>
+								</p>		
+								<p class="goodsdetails goods">
+									<a href="">Tata/他她2018冬专柜同款黑色拼接长筒靴骑士靴瘦瘦靴粗跟女长靴2BS90DC8</a>
+								</p>
+								
+								<div class="color-size goods">
+									<p class="cgray tleft">
+									颜色：
+									<em class="f_gray">黑色</em>
+									</p>
+									<p class="cgray tleft">
+										尺码：
+										<em class="f_gray">39</em>
+									</p>
+								</div>
+								
+								
+								<p class="goods price"><span class="priceId">1000</span></p>
+								<p class="selectnumb goods">
+									<input type="button" value="-" class="reduce" style="width:20px;"/>
+									<input type="text" value="1" class="current" min="1" style="width:30px;text-align: center;"/>
+									<input type="button" value="+" class="add" style="width:20px;"/>
+								</p>
+								<p class="goods goodsmony totalmoney" >
+									
+								</p>
+								<div class="goods addmove">
+										<a href="" class="move">移入收藏夹</a>
+										<a href="" class="delete">删除</a>
+								</div>
+							</li>
+							
+							<li class="sp-goods">
+								<p class="goods">
+									<input type="checkbox" class="ckbox"/>
+									<a href="" class="goodsimg"><img src="img/101_t.jpg" alt="" /></a>
+								</p>		
+								<p class="goodsdetails goods">
+									<a href="">Tata/他她2018冬专柜同款黑色拼接长筒靴骑士靴瘦瘦靴粗跟女长靴2BS90DC8</a>
+								</p>
+								
+								<div class="color-size goods">
+									<p class="cgray tleft">
+									颜色：
+									<em class="f_gray">黑色</em>
+									</p>
+									<p class="cgray tleft">
+										尺码：
+										<em class="f_gray">39</em>
+									</p>
+								</div>
+								
+								
+								<p class="goods price"><span class="priceId">1000</span></p>
+								<p class="selectnumb goods">
+									<input type="button" value="-" class="reduce" style="width:20px;"/>
+									<input type="text" value="1" class="current" min="1" style="width:30px;text-align: center;"/>
+									<input type="button" value="+" class="add" style="width:20px;"/>
+								</p>
+								<p class="goods goodsmony totalmoney" >
+									
+								</p>
+								<div class="goods addmove">
+										<a href="" class="move">移入收藏夹</a>
+										<a href="" class="delete">删除</a>
+								</div>
+							</li>
+						</ul>
+						<div class="sp-select">
+							<ul>
+								<li><a href="">
+									<input type="checkbox" class="Allbox"/>
+									全选</a></li>
+								<li><a href="">移入收藏夹</a></li>
+								<li><a href="" class="deleteAll">删除</a></li>
+							</ul>
+						</div>
+					</div>	
+					<div class="sp-continue">
+						<p class="jixvg"><a href="">继续购物</a></p>
+						<p class="qkgwd"><a href="">清空购物袋</a></p>
+						<div class="moneybox">
+							<div class="Summoney">
+								<p>
+									<strong>总计（不含运费 ）：</strong>
+									<strong>¥<span id="Totalmoney">0</span></strong>
+								</p>	
+								<a href="" class="Maccount">去结算</a>
+							</div>
+							
+						</div>
+					</div>
+				</table>
+			</div>
+			
+		</div>
+		
+		<!--spbag footer start-->
+		<div id="spfoot"></div>
+		<!--spbag footer end-->
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript">
+	
+
+	//页面打开计算每个商品的金额
+	$(function(){
+		
+		$(".totalmoney").each(function(){
+			let price = $(this).siblings(".price").children().html();
+			let num =	$(this).siblings(".selectnumb").children(".current").val();
+			money = price*num;
+			$(this).html(money);
+		})
+		
+	});
+	
+	//点击加、减后计算单个商品总价
+	function everyTotal(object){
+		let num=0;
+		if(object.is(".current")){
+			num = object.val();
+		}else{
+			num =  Number(object.siblings(".current").val());
+		}
+		let price = parseFloat(object.parent().prev().children().html());
+		let Summoney = num*price;
+		object.parent().next().html(Summoney);
+	}
+	
+	
+	//点击减号改变数量	
+	$(".reduce").each(function(){
+		
+		$(this).click(function(){
+			//先改变单个商品金额
+			let num = $(this).next().val();
+			if(num==1){
+				$(this).css({"cursor":"not-allowed"})
+			}else{
+				$(this).css({"cursor":"pointer"})
+				num--;
+				
+				//改变输入框内容
+				$(this).next().val(num);
+				//调用计算单个商品函数
+				everyTotal($(this));
+				
+				//、总价就是选中商品价格总和
+				allCash();
+			}
+		});		
+	});		
+		
+	//点击加号改变数量	
+	$(".add").each(function(){
+		$(this).click(function(){
+			//先改变单个商品金额
+			let num = $(this).prev().val();
+				$(this).css({"cursor":"pointer"})
+				num++;
+			//改变输入框内容
+			$(this).prev().val(num);
+			//调用计算单个商品函数
+			everyTotal($(this));
+			
+			//、总价就是选中商品价格总和
+			allCash();
+		});
+	});		
+	
+//循环商品选中框,判断是否被选中,给每个商品选中框绑定事件,函数（改变所有商品总金额等于选中商品金额之和)
+	function allCash(){
+		let Allmoney = 0;
+		$(".ckbox").each(function(){
+			//1、改变所有商品总金额
+			let ckbox = $(this).attr("checked");
+			if(ckbox=="checked"){
+				Allmoney += Number($(this).parent().siblings(".totalmoney").html());
+				$("#Totalmoney").html(Allmoney);
+			}
+			
+		});			
+	}
+		
+
+	//点击选中商品改变应付金额	
+		$(function(){
+			let Allmoney =0;
+			$(".ckbox").click(function(){
+				let GG = $(".ckbox").index($(this));
+				if($(this).attr("checked")=="checked"){
+					console.log(GG);
+					Allmoney = Number($("#Totalmoney").html());
+					Allmoney+=Number($(".totalmoney")[GG].innerHTML);
+				}else{
+					Allmoney = Number($("#Totalmoney").html());
+					Allmoney-=Number($(".totalmoney")[GG].innerHTML);
+				}
+				
+				$("#Totalmoney").html(Allmoney);
+				//有几个选中
+				isAllselec();
+			});	
+		});
+
+	
+	//计算所有商品总价(只能加选中的商品的金额)	
+	function Totalmoney(){
+		let L = $(".totalmoney").length;
+		let Allmoney =0;
+		
+		for(let i=0;i<L;i++){
+			//该商品选中才加它的金额
+			if($(".ckbox")[i].attr("checked")=="checked"){
+				Allmoney+=Number($(".totalmoney")[i].innerHTML);
+			}
+		}
+		$("#Totalmoney").html(Allmoney);
+	}
+	
+	
+	//删除商品()
+	$(".delete").click(function(){
+		//不能仅隐藏,还需要删除Dom	
+		if(confirm("您确定要删除该商品吗?")){
+			$(this).parent().parent().remove();
+			return false;//组织冒泡（可能是布局问题导致事件冒泡）需要确认
+		}
+	})
+
+	function isAllselec(){
+		let len = 0;
+		$(".ckbox").each(function(){
+			if($(this).attr("checked")=="checked"){
+				len++;
+			}
+		});
+		//console.log(len);
+		if(len==$(".ckbox").length){
+			$(".Allbox").attr({checked:"checked"});
+		}else{
+			$(".Allbox").removeAttr("checked");
+		}
+	}
+	
+
+	
+</script>
